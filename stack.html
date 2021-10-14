@@ -52,5 +52,27 @@
 		/* add it to the container */
 		document.getElementById('target').appendChild(element)
 	}
+	function popItem() {
+		let stackItems = document.getElementsByClassName("stack")
+		let lenStackItem = stackItems.length
+		if(lenStackItem > 0) {
+			stackItems[lenStackItem-1].remove()
+		}
+	}
+
+	function zap() {
+		let stackItems = document.getElementsByClassName("stack")
+		let val = document.getElementById('val').value
+		index = 0
+		for(let item of stackItems) {
+			if(item.innerHTML == val) {
+				console.log(item)
+				setTimeout(function(){
+					item.remove()
+				},stackItems[index])
+			}
+			index += 1
+		}
+	}
 </script>
 </html>	
