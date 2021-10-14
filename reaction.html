@@ -33,6 +33,28 @@
     myTime = Date.now();
     console.log(myTime);
   }
+
+  function startTime() {   
+    times = 3 
+    for(let i = 0; i < times; i++) {
+      setTimeout(function() {
+        cntDwn = document.getElementById('countdown')
+        cntDwn.innerHTML = i
+      }, ((times - i) * 1000))
+    }
+    setTimeout(function() {
+      trg = document.getElementById('target')
+      if(myTime === undefined) {
+        trg.innerHTML = "Too Slow"
+      } else {
+        let buttonTime = Date.now();
+        let difference = buttonTime - myTime
+        trg.innerHTML = "Time was " + difference
+      }
+      myTime = undefined
+    }, times*1000)
+
+  }
   </script>
 
 
