@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>Animal Hunt Ohi Longe
   <title>My Animal Hunt</title>
   <meta charset="utf-8">
@@ -10,68 +10,109 @@
   integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
   integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <style>
+    p{
+      font-style: oblique;
+      font-size: 15px;
+      margin-inline-start: 5pc;
+    }
+  </style>
+</head>
+
 <body>
+  <h1>Animal Hunt by Ohi Longe </h1>
+  <p>Click on the squares to search for wildlife</p>
+ 
+  <p id= tries>Number of tries is zero</p>
+  <p id= distance>Distance is unknown</p>
 
-    <style>
-        p{
-            font-style: oblique;
-            font-size: 20px;
-            margin-inline-start: 10pc;
-  
-  
-        }
-    </style>
-  </head>
-  <body>
-      <h1>Animal Hunt by Ohi Longe </h1>
-      <p>Click on the squares to search for wildlife</p>
-      <p id= tires>Numbers of tires is zero</p>
-      <p id= distance>Distance is unknown</p>
-  
-      <div class="container">
-          <div class="row">
-              <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-              <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-              <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-              <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-              <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-              <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div> 
-          </div>
-          
-          <div class="row">
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div> 
-        </div>
-        
-        <div class="row">
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div> 
-        </div>
-        
-        <div class="row">
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div>
-            <div class="col"><img src="tree1.jpg" alt="image of tree" height="200"width="200"></div> 
-        </div>
-        
-          
-        
-      </div>
-  
-  </body>
-  </html>
+  <div class="container">
+    <div class="row">
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r1" onclick="check(0)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r2" onclick="check(1)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r3" onclick="check(2)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r4" onclick="check(3)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r5" onclick="check(4)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r6" onclick="check(5)"></div>
+    </div>
 
+    <div class="row">
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r7" onclick="check(6)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r8" onclick="check(7)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r9" onclick="check(8)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r10" onclick="check(9)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r11" onclick="check(10)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r12" onclick="check(11)"></div>
+    </div>
+
+    <div class="row">
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r13" onclick="check(12)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r14" onclick="check(13)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r15" onclick="check(14)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r16" onclick="check(15)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r17" onclick="check(16)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="140"width="140" id="r18" onclick="check(17)"></div>
+    </div>
+
+    <div class="row">
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="100"width="140" id="r19" onclick="check(18)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="100"width="140" id="r20" onclick="check(19)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="100"width="140" id="r21" onclick="check(20)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="100"width="140" id="r22" onclick="check(21)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="100"width="140" id="r23" onclick="check(22)"></div>
+      <div class="col"><img src="tree1.jpg" alt="image of tree" height="100"width="140" id="r24" onclick="check(23)"></div>
+    </div>
+  </div>
+
+<script>
+  let ids = ["r1", "r2", "r3","r4", "r5", "r6", "r7", "r8", "r9","r10", "r11", "r12", "r13", "r14", "r15","r16", "r17", "r18", "r19", "r20", "r21","r22", "r23", "r24"]
+  let triesCount = 0
+  animalLocation = 13
+  function check(y){
+    id = ids[y]
+    imageElement = document.getElementById(id)
+    if(y === animalLocation) {
+      imageElement.src = "pitbull1.jpg"
+      setTimeout(function(){
+        resetGame()
+      }, 3000)
+      return
+    } else {
+      imageElement.src = "dirt1.jpg"
+    }
+    triesCount += 1
+    triesTag = document.getElementById("tries")
+    triesTag.innerHTML = "Number of tries is " + triesCount
+    distance(y, animalLocation)
+  }
+
+  function distance(currPos, animalLocation) {
+    curr = currPos % 6
+    destination = animalLocation % 6
+    parallelDis = Math.abs(curr - destination)
+    verCurr = Math.floor(currPos / 6)
+    verDest = Math.floor(animalLocation / 6)
+    verticalDis = Math.abs(verCurr - verDest)
+    maxDis = Math.max(parallelDis, verticalDis)
+
+    distanceTag = document.getElementById("distance")
+    distanceTag.innerHTML = "The distance is " + maxDis
+  }
+
+  function resetGame() {
+    animalLocation = getRandomInt(0, 24) // because 24 is exclusive
+    triesCount = 0
+    triesTag = document.getElementById("tries")
+    triesTag.innerHTML = "The number of tries is " + triesCount
+    distanceTag = document.getElementById("distance")
+    distanceTag.innerHTML = "The distance is 0" 
+
+    for(let j = 0; j <= 23; j++) {
+        imageElement = document.getElementById(ids[y])
+        imageElement.src = "tree1.jpg"
+    }
+  }
+</script>
 
 </body>
 </html>
